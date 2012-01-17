@@ -42,8 +42,3 @@ class BubbleSort
         return $a;
     }
 }
-
-$sort = new BubbleSort();
-$x = $sort->sort(array(5, 3, 80, 4 , 1, 2, 6));
-
-print_r($x);

@@ -35,8 +35,3 @@ class BogoSort
         return $a;
     }
 }
-
-$sort = new BogoSort();
-$x = $sort->sort(array(5, 3, 80, 4 , 1, 2, 6));
-
-print_r($x);
