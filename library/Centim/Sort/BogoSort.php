@@ -17,7 +17,7 @@ namespace Centim\Sort;
  */
 class BogoSort
 {
-    public function sort(array $a)
+    public static function sort(array $a)
     {
         do {
             // spin the array, and hope it's sorted properly

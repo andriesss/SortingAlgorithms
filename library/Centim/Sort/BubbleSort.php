@@ -17,7 +17,7 @@ namespace Centim\Sort;
  */
 class BubbleSort
 {
-    public function sort(array $a)
+    public static function sort(array $a)
     {
         $n = count($a);
 
