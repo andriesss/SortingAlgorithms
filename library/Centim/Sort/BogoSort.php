@@ -28,7 +28,7 @@ class BogoSort
                     continue;
                 }
 
-                break;
+                break 2;
             }
         } while (true);
 
