@@ -23,7 +23,7 @@ class BogoSort
             // spin the array, and hope it's sorted properly
             shuffle($a);
 
-            for ($i = 1; $i <= count($i) - 1; $i++) {
+            for ($i = 1; $i <= count($a) - 1; $i++) {
                 if ($a[$i-1] > $a[$i]) {
                     continue;
                 }
