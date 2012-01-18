@@ -15,7 +15,7 @@ namespace Centim\Sort;
  * Best case performance 	Ω(n)
  * Average case performance O(n × n!)
  */
-class BogoSort
+class BogoSort implements Sort
 {
     public static function sort(array $a)
     {

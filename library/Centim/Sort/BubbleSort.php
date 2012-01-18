@@ -15,7 +15,7 @@ namespace Centim\Sort;
  * Best case performance: 	 O(n)
  * Average case performance: O(n2)
  */
-class BubbleSort
+class BubbleSort implements Sort
 {
     public static function sort(array $a)
     {
