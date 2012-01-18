@@ -19,9 +19,6 @@ class CountingSort implements Sort
             }
         }
 
-        $s = min($a);
-        $largest  = max($a);
-
         $t = $largest - $s +1;
         $tally = array_fill(0, $t, 0);
 
