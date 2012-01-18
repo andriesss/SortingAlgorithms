@@ -19,7 +19,7 @@ class CountingSort implements Sort
             }
         }
 
-        $t = $largest - $s +1;
+        $t = $b - $s +1;
         $tally = array_fill(0, $t, 0);
 
         for ($i = 0; $i < $n; $i++) {
@@ -27,7 +27,7 @@ class CountingSort implements Sort
         }
 
         $k = 0;
-        for ($i = $s; $i <= $largest; $i++) {
+        for ($i = $s; $i <= $b; $i++) {
             for ($j = $tally[$i-$s]; $j > 0; $j--) {
                 $a[$k] = $i;
                 $k++;
