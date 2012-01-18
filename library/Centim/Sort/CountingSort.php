@@ -8,20 +8,30 @@ class CountingSort implements Sort
     {
         $n = count($a);
 
+        $s = $b = current($a);
+
         // find largest and smallest integers in $a
-        $smallest = min($a);
+        for ($i = 1; $i < $n; $i++) {
+            if ($a[$i] < $s) {
+                $s = $a[$i];
+            } else if ($a[$i] > $b) {
+                $b = $i;
+            }
+        }
+
+        $s = min($a);
         $largest  = max($a);
 
-        $t = $largest - $smallest +1;
+        $t = $largest - $s +1;
         $tally = array_fill(0, $t, 0);
 
         for ($i = 0; $i < $n; $i++) {
-            $tally[$a[$i]-$smallest]++;
+            $tally[$a[$i]-$s]++;
         }
 
         $k = 0;
-        for ($i = $smallest; $i <= $largest; $i++) {
-            for ($j = $tally[$i-$smallest]; $j > 0; $j--) {
+        for ($i = $s; $i <= $largest; $i++) {
+            for ($j = $tally[$i-$s]; $j > 0; $j--) {
                 $a[$k] = $i;
                 $k++;
             }
