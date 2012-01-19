@@ -30,6 +30,18 @@ class SortTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals($sorted, Sort\CountingSort::sort($unsorted));
     }
 
+    /**
+     * Tests quicksort algorithm
+     *
+     * @param $unsorted - unsorted array
+     * @param $sorted   - expected sorted result
+     * @dataProvider providerUnsortedArrayWithIntegers
+     */
+    public function testQuickSort($unsorted, $sorted)
+    {
+        $this->assertEquals($sorted, Sort\QuickSort::sort($unsorted));
+    }
+
     public function providerUnsortedArrayWithIntegers()
     {
         return array(
