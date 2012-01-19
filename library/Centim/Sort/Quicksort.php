@@ -2,6 +2,14 @@
 
 namespace Centim\Sort;
 
+/**
+ * Quicksort is a divide and conquer algorithm. Quicksort first divides a large list into two
+ * smaller sub-lists: the low elements and the high elements. Quicksort can then recursively sort the sub-lists
+ *
+ * Worst case performance   O(n2)
+ * Best case performance    O(n log n)
+ * Average case performance O(n log n)
+ */
 class QuickSort implements Sort
 {
     public static function sort(array $a)
