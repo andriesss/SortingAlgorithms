@@ -21,12 +21,12 @@ function startBenchmark(Centim\Sort\Sort $sort)
             $sort->sort($data);
 
             $end = microtime(true);
-            echo $end - $start . " seconds\n\n";die;
+            echo $end - $start . " seconds\n\n";
         }
     }
 }
 
-//startBenchmark(new Centim\Sort\BubbleSort());
+startBenchmark(new Centim\Sort\BubbleSort());
 startBenchmark(new Centim\Sort\CountingSort());
 startBenchmark(new Centim\Sort\QuickSort());
 
